@@ -27,12 +27,20 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="20dp"
-
-
         android:text="행운의 번호를 만들자!"
-
         android:textColor="#FF0000"
         android:textSize="20dp" />
+
+    <ImageButton
+        android:width = "200dp"
+        android:height = "2000dp"
+
+              android:id="@+id/luck_btn"
+        android:src="@drawable/luck_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
 
     <LinearLayout
         android:layout_margin="30dp"
@@ -139,7 +147,6 @@
         ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
 
     </com.google.android.gms.ads.AdView>
-
 
 
 </LinearLayout>

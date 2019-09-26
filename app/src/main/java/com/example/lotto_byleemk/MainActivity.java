@@ -2,6 +2,7 @@ package com.example.lotto_byleemk;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +14,7 @@ import com.google.android.gms.ads.MobileAds;
 
 import java.util.Arrays;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     TextView num_1, num_2, num_3, num_4, num_5, num_6;
     Button make_btn;
