@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     int lotto[] = new int[6];
+    private AdView adBanner;
 
 
 
@@ -23,6 +28,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        MobileAds.initialize(this,  "ca-app-pub-3940256099942544/6300978111" );
+
+
+        adBanner = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adBanner.loadAd(adRequest);
+
 
 
         num_1 = (TextView)findViewById(R.id.num_1);
